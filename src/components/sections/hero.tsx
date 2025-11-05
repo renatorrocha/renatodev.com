@@ -28,10 +28,18 @@ export default function HeroSection() {
           </div>
 
           <BlurFade delay={BLUR_FADE_DELAY}>
-            <Avatar className="size-36 border">
+            <div className="relative">
+            <Avatar className="size-36 border z-10">
               <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
               <AvatarFallback>{DATA.initials}</AvatarFallback>
             </Avatar>
+
+            <img
+              src="/christmas-hat.png"
+              alt="Snow Fall"
+              className="absolute -right-8 -top-6 rotate-12 size-24"
+            />
+            </div>
           </BlurFade>
         </div>
       </div>
