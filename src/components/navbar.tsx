@@ -70,8 +70,8 @@ export default function Navbar() {
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>
-              <Link
-                href={DATA.curriculum}
+              <a
+                href={t("resumeLink")}
                 target="_blank"
                 className={cn(
                   buttonVariants({ variant: "ghost", size: "icon" }),
@@ -79,7 +79,7 @@ export default function Navbar() {
                 )}
               >
                 <FileTextIcon className="size-4" />
-              </Link>
+              </a>
             </TooltipTrigger>
             <TooltipContent>
               <p>{t("curriculum")}</p>
