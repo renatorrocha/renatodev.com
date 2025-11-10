@@ -102,6 +102,31 @@
     "description": "Here are a few of my favorite projects that I have worked on.",
     "projects": [
       {
+        "title": "Renatodev.com",
+        "href": "https://renatodev.com/",
+        "active": true,
+        "description": "My personal website, where I share my knowledge and experiences.",
+        "technologies": [
+          "Next.js",
+          "Typescript",
+          "TailwindCSS",
+          "Shadcn UI",
+          "Vercel"
+        ],
+        "links": [
+          {
+            "type": "Website",
+            "href": "https://renatodev.com/"
+          },
+          {
+            "type": "Code",
+            "href": "https://github.com/renatorrocha/renato-dev"
+          }
+        ],
+        "image": "",
+        "video": ""
+      },
+      {
         "title": "Dev-Connect",
         "href": "https://dev-connect-prod.up.railway.app/",
         "active": true,

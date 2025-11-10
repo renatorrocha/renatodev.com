@@ -41,13 +41,16 @@ Tudo isso sem precisar decidir manualmente o número da nova versão.
 
 # Ele é exclusivo de projetos JavaScript?
 
-**Não mesmo!** Já testei o semantic-release em projetos C# e funcionou perfeitamente. O truque foi criar um `package.json` e um `.releaserc.json`, onde defino os scripts e as dependências necessárias para rodar o semantic-release (e sinceramente, talvez nem precise de tudo isso kkk).
+**Não mesmo!** Já testei o semantic-release em projetos Golang e funcionou perfeitamente. O truque foi criar um `package.json` e um `.releaserc.json`, onde defino os scripts e as dependências necessárias para rodar o semantic-release (e sinceramente, talvez nem precise de tudo isso kkk).
 
 Depois, é só criar um workflow no GitHub Actions que executa o script do semantic-release na branch desejada. Dá pra configurar a regra como preferir: rodar a cada commit, PR mergeado, ou qualquer outro gatilho.
 
 > 💡 **Lembre-se** de criar um `repository secret` armazenando o seu PAT (Personal Access Token) e de habilitar, nas configurações do repositório, a opção de **Workflow Permissions** com permissão de leitura e escrita no repositório.  
 > (Quebrei muuuito a cabeça até descobrir que era isso que tava bloqueando meu release automático kkkkk)
 
----
+# Exemplos de repositórios com semantic-release configurado
 
-No próximo post, posso mostrar como configurar o semantic-release do zero — seja num projeto JavaScript, C#, ou até em projetos que nem usam Node diretamente. Spoiler: é mais fácil do que parece.
+Se quiser ver na prática como ficou a configuração, aqui vão dois repositórios de exemplo que montei:
+
+- [**semantic-release-boilerplate**](https://github.com/renatorrocha/semantic-release-boilerplate): projeto básico usando **Bun** no frontend para demonstrar o semantic-release em um contexto JS/TS.
+- [**semantic-release-golang**](https://github.com/renatorrocha/semantic-release-golang): um projeto em **Go**, mostrando como o semantic-release pode ser usado mesmo fora do ecossistema Node.js (irônico o fato de ter um package.json no repositório kkkkk).

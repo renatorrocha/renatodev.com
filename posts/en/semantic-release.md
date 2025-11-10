@@ -1,54 +1,56 @@
 ---
-title: Versioning and Automated Releases
-description: How I version my apps with automated releases and changelogs
+title: Automatic Versioning and Releases
+description: How I automate versioning and changelogs in my projects using semantic-release
 date: 2025-04-17
 ---
 
 # What is versioning?
 
-Versioning is the process of assigning version numbers to your code, usually following the `vX.Y.Z` pattern — also known as **SemVer** ([Semantic Versioning](https://semver.org/)).
+Versioning is the process of assigning version numbers to your code, usually following the `vX.Y.Z` pattern (also known as **SemVer** – [Semantic Versioning](https://semver.org/)).
 
-Each part of the version number means something:
+Each part of the version number has a specific meaning:
 
-- **Major (`X`)**: increased when breaking changes are introduced that are **not compatible** with previous versions.
-- **Minor (`Y`)**: increased when new **backward-compatible features** are added.
-- **Patch (`Z`)**: increased when **backward-compatible bug fixes** are made.
+- **Major (`X`)**: incremented when you introduce breaking changes.
+- **Minor (`Y`)**: incremented when you add new features that **don’t break** existing functionality.
+- **Patch (`Z`)**: incremented when you make **backwards-compatible bug fixes**.
 
-This kind of versioning helps clearly communicate the impact of a new release to anyone using your app or library.
+This kind of versioning helps clearly communicate the impact of a new version to the users of your application or library.
 
 # What is a release?
 
 A **release** is a packaged and published version of your project. It usually includes:
 
 - The new version number
-- A changelog listing what has changed
-- Optionally, binaries, artifacts, or distribution files (depending on the project)
+- A changelog with the updates
+- Possibly binaries, artifacts, or distribution files (depending on the project)
 - A commit and a tag in the repository marking that version
 
 In other words: it’s the official delivery of a new version of your code.
 
-# How to generate versioning and releases automatically?
+# How to automate versioning and releases?
 
 That’s where [**semantic-release**](https://semantic-release.gitbook.io/semantic-release/) comes in — a tool that automates the entire process of:
 
 - Generating and applying version numbers based on commit messages (using conventions like [Conventional Commits](https://www.conventionalcommits.org/))
-- Automatically generating changelogs
-- Creating and publishing the release (with tag, release message, and even publishing to GitHub/GitLab/NPM/etc.)
+- Automatically creating changelogs
+- Creating and publishing releases (with tags, messages, and optionally publishing to GitHub, GitLab, NPM, etc.)
 
-All of this without having to manually decide the version number.
+All of this without having to manually decide the next version.
 
-> In other words: focus on writing good commit messages, and let semantic-release handle the rest.
+> In short: you just focus on writing meaningful commits, and semantic-release handles the rest.
 
-# Is it JavaScript-only?
+# Is it only for JavaScript projects?
 
-**Not at all!** I’ve tested semantic-release in C# projects and it worked flawlessly. The trick was adding a `package.json` and a `.releaserc.json` to define the scripts and dependencies needed to run semantic-release (though honestly, not all of it might be necessary lol).
+**Not at all!** I’ve tested semantic-release with Golang projects and it worked flawlessly. The trick is creating a `package.json` and a `.releaserc.json`, where I define the scripts and dependencies needed to run semantic-release (and honestly, maybe not even all of that is strictly necessary lol).
 
-Then, I created a GitHub Actions workflow to run the semantic-release script on the desired branch. You can configure it however you want: every commit, after a PR is merged, etc.
+Then you just create a GitHub Actions workflow that runs the semantic-release script on the desired branch. You can configure the workflow however you like — for every commit, after a PR is merged, or with any other trigger.
 
-> 💡 **Don’t forget** to create a `repository secret` with your **PAT (Personal Access Token)** and enable **Workflow Permissions** in your repo settings, allowing GitHub Actions to read and write to the repo.  
-> (I spent waaay too long debugging until I realized I hadn’t enabled that option 😂)
+> 💡 **Pro tip:** don’t forget to create a `repository secret` for your PAT (Personal Access Token), and enable **Workflow permissions** under the repository settings to allow read/write access.  
+> (It took me waaay too long to figure out that this was the reason my releases weren’t being published hahah)
 
----
+# Example repositories with semantic-release configured
 
-In the next post, I might walk through how to set up semantic-release from scratch — whether it’s for a JavaScript, C# project, or even something that doesn’t use Node at all.  
-Spoiler: it’s easier than it sounds.
+If you want to see how it works in practice, here are two sample repositories I set up:
+
+- [**semantic-release-boilerplate**](https://github.com/renatorrocha/semantic-release-boilerplate): a basic project using **Bun** in the frontend to demonstrate semantic-release in a JS/TS environment.
+- [**semantic-release-golang**](https://github.com/renatorrocha/semantic-release-golang): a **Go** project showing how semantic-release can also be used outside of the Node.js ecosystem (yes, there’s a `package.json` in the repo — ironic, I know hahaha).
