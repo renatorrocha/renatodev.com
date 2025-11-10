@@ -1,4 +1,4 @@
 - [ ] Update Packages
 - [x] Christmas update
-- [ ] Change eslint/prettier to Biome
+- [x] Change eslint/prettier to Biome
 - [ ] Add new pages for specialization or courses (with overview and the certification)
