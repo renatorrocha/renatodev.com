@@ -7,21 +7,21 @@ import SkillsSection from "@/components/sections/skills";
 import WorkSection from "@/components/sections/work";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-[100dvh] flex-col space-y-10">
-      <HeroSection />
+	return (
+		<main className="flex min-h-dvh flex-col space-y-10">
+			<HeroSection />
 
-      <BackgroundBeams />
+			<BackgroundBeams />
 
-      <AboutSection />
+			<AboutSection />
 
-      <WorkSection />
+			<WorkSection />
 
-      <EducationSection />
+			<EducationSection />
 
-      <SkillsSection />
+			<SkillsSection />
 
-      <ProjectsSection />
-    </main>
-  );
+			<ProjectsSection />
+		</main>
+	);
 }

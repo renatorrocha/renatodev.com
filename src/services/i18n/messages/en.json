@@ -2,6 +2,7 @@
   "Labels": {
     "changeTheme": "Change Theme",
     "changeLanguage": "Change Theme",
+    "resumeLink": "/resume-en.pdf",
     "curriculum": "Curriculum"
   },
   "Hero": {
@@ -11,21 +12,37 @@
 
   "About": {
     "aboutMe": "About Me",
-    "resume": "I'm a passionate and dedicated **software developer**, constantly seeking to enhance my skills and tackle new technological challenges. Started my career as a **Mobile Developer** focused in _Android_ and now I'm a **Frontend Developer** focused in creating responsive and modern web applications using _React_."
+    "resume": "I'm a passionate and dedicated **software developer**, constantly seeking to enhance my skills and tackle new technological challenges. Started my career as a **Mobile Developer** focused in _Android_, worked as a **Fullstack Developer** and now I'm a **Software Developer / AI ML Jr**, working with web development and Artificial Intelligence and Machine Learning projects."
   },
   "Work": {
     "title": "Professional Experience",
     "present": "Present",
     "experiences": [
       {
-        "company": "Foursys",
-        "href": "https://foursys.com.br/",
-        "badges": ["Kotlin", "Java", "Android"],
-        "logoUrl": "/foursys.png",
-        "start": "April 2022",
-        "end": "Feb 2023",
-        "title": "Mobile Developer",
-        "description": "Working on software development projects as a mobile development intern, focusing on Android development using Java. During the internship, the following topics were covered:\n\n- Interface Design\n- Programming Logic\n- Java for Android\n- GIT for version control\n- Project Management Methodologies in Technology\n\n**Tools used:**\n\n- GitHub/GitLab - Repositories\n- Android Studio - IDE\n- Firebase\n- Agile Methodology - Scrum\n- Figma/Miro"
+        "company": "Findes",
+        "href": "https://findes.com.br/",
+        "badges": [
+          "Python",
+          "LangChain",
+          "Machine Learning",
+          "React",
+          "Nest.js"
+        ],
+        "logoUrl": "/findes.png",
+        "start": "Jul 2025",
+        "end": "Present",
+        "title": "Software Developer / AI ML Jr",
+        "description": "Promoted to Junior Developer, expanding my scope from web development to Artificial Intelligence and Machine Learning projects. Participated in the design and development of fullstack applications integrated with AI resources. Worked with Python, LangChain and Machine Learning models, creating prototypes and pipelines for AI-based solutions."
+      },
+      {
+        "company": "Findes",
+        "href": "https://findes.com.br/",
+        "badges": ["React", "TypeScript", "Tanstack Router", "Figma"],
+        "logoUrl": "/findes.png",
+        "start": "Dec 2024",
+        "end": "Jun 2025",
+        "title": "Software Development Scholar",
+        "description": "Worked on frontend software development, creating responsive and intuitive interfaces with React, Tanstack Router and TypeScript. Created low and medium fidelity wireframe prototypes in Figma to validate user flows and interface design. Participated in project requirements gathering and documentation, contributing to the definition of functionalities and application scope."
       },
       {
         "company": "Findes",
@@ -33,9 +50,19 @@
         "badges": ["React", "Nest.js", "Docker"],
         "logoUrl": "/findes.png",
         "start": "Aug 2023",
-        "end": "Present",
-        "title": "Software Developer",
-        "description": "Working on full-stack web development projects, with a primary focus on frontend using TypeScript. Responsible for creating responsive and modern interfaces aligned with client needs, while also contributing to backend development. Main technologies and tools:\n\n**Frontend:**\n- React with TypeScript\n- Next.js and Vite\n- Tanstack Query + Router\n- React Hook Form + Zod\n- Material UI and Styled-Components\n- TailwindCSS\n- Shadcn UI\n- Zustand\n\n**Backend:**\n- Nest.js\n- Prisma ORM\n- Docker\n\n**Methodologies:**\n- Scrum/Agile\n- Git versioning"
+        "end": "Nov 2024",
+        "title": "Software Development Intern",
+        "description": "Worked as Fullstack Developer with React and Nest.js, contributing to the development of modern and scalable web applications. Worked in Dockerized environment, implementing good practices for versioning and code organization. Collaborated in multidisciplinary teams applying agile methodologies (Scrum)."
+      },
+      {
+        "company": "Foursys",
+        "href": "https://foursys.com.br/",
+        "badges": ["Kotlin", "Java", "Android"],
+        "logoUrl": "/foursys.png",
+        "start": "Apr 2022",
+        "end": "Feb 2023",
+        "title": "Mobile Development Intern",
+        "description": "Worked as Android Developer, developing and maintaining mobile applications with Java and Kotlin. Designed and implemented interface components focusing on usability and responsiveness. Used version control with Git/GitHub/GitLab for collaborative development."
       }
     ]
   },
@@ -43,20 +70,28 @@
     "title": "Education",
     "records": [
       {
-        "institution": "Multivix",
-        "href": "https://multivix.edu.br/",
-        "degree": "Software Analysis and Development",
-        "logoUrl": "/multivix.png",
-        "start": "Jul 2022",
-        "end": "Sep 2024"
+        "institution": "Rocketseat",
+        "href": "https://www.rocketseat.com.br/",
+        "degree": "Postgraduate Tech 360",
+        "logoUrl": "/rocketseat.png",
+        "start": "May 2025",
+        "end": "May 2026"
       },
       {
-        "institution": "Rocketseat + Sirius",
+        "institution": "Rocketseat",
         "href": "https://www.rocketseat.com.br/",
-        "degree": "MBA in Fullstack Development",
+        "degree": "Postgraduate MBA Fullstack",
         "logoUrl": "/rocketseat.png",
         "start": "Aug 2024",
         "end": "Aug 2025"
+      },
+      {
+        "institution": "Multivix",
+        "href": "https://multivix.edu.br/",
+        "degree": "Bachelor's Degree in Systems Analysis and Development",
+        "logoUrl": "/multivix.png",
+        "start": "Jul 2022",
+        "end": "Sep 2024"
       }
     ]
   },

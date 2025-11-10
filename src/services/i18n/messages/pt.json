@@ -2,6 +2,7 @@
   "Labels": {
     "changeTheme": "Mudar Tema",
     "changeLanguage": "Mudar Linguagem",
+    "resumeLink": "/resume-ptbr.pdf",
     "curriculum": "Currículo"
   },
 
@@ -12,7 +13,7 @@
 
   "About": {
     "aboutMe": "Sobre Mim",
-    "resume": "Sou um **desenvolvedor de software** apaixonado e dedicado, sempre buscando aprimorar minhas habilidades e enfrentar novos desafios tecnológicos. Comecei minha carreira como **Desenvolvedor Mobile** com foco em _Android_ e agora sou um **Desenvolvedor Frontend** focado em criar aplicações web responsivas e modernas usando _React_."
+    "resume": "Sou um **desenvolvedor de software** apaixonado e dedicado, sempre buscando aprimorar minhas habilidades e enfrentar novos desafios tecnológicos. Comecei minha carreira como **Desenvolvedor Mobile** com foco em _Android_, atuei como **Desenvolvedor Fullstack** e agora sou um **Desenvolvedor de software / AI ML Jr**, trabalhando com desenvolvimento web e projetos de Inteligência Artificial e Machine Learning."
   },
 
   "Work": {
@@ -20,14 +21,30 @@
     "present": "Atual",
     "experiences": [
       {
-        "company": "Foursys",
-        "href": "https://foursys.com.br/",
-        "badges": ["Kotlin", "Java", "Android"],
-        "logoUrl": "/foursys.png",
-        "start": "Abril 2022",
-        "end": "Fev 2023",
-        "title": "Desenvolvedor Mobile",
-        "description": "Trabalhando em projetos de desenvolvimento de software como estagiário de desenvolvimento mobile, com foco em Android utilizando Java. Durante o estágio, os tópicos abordados foram:\n\n- Design de Interface\n- Lógica de Programação\n- Java para Android\n- GIT para controle de versão\n- Metodologias de Gerenciamento de Projetos de Tecnologia\n\n**Ferramentas utilizadas:**\n\n- GitHub/GitLab - Repositórios\n- Android Studio - IDE\n- Firebase\n- Metodologia Ágil - Scrum\n- Figma/Miro"
+        "company": "Findes",
+        "href": "https://findes.com.br/",
+        "badges": [
+          "Python",
+          "LangChain",
+          "Machine Learning",
+          "React",
+          "Nest.js"
+        ],
+        "logoUrl": "/findes.png",
+        "start": "Jul 2025",
+        "end": "Atual",
+        "title": "Desenvolvedor de software / AI ML Jr",
+        "description": "Promovido a Desenvolvedor Júnior, ampliando meu escopo de atuação de desenvolvimento web para projetos de Inteligência Artificial e Machine Learning. Participei do desenho e desenvolvimento de aplicações fullstack integradas a recursos de IA. Atuei com Python, LangChain e modelos de Machine Learning, criando protótipos e pipelines para soluções baseadas em IA."
+      },
+      {
+        "company": "Findes",
+        "href": "https://findes.com.br/",
+        "badges": ["React", "TypeScript", "Tanstack Router", "Figma"],
+        "logoUrl": "/findes.png",
+        "start": "Dez 2024",
+        "end": "Jun 2025",
+        "title": "Bolsista em desenvolvimento de software",
+        "description": "Atuei no desenvolvimento de softwares no frontend, criando interfaces responsivas e intuitivas com React, Tanstack Router e TypeScript. Criei protótipos de wireframes de baixa e média fidelidade no Figma para validar fluxos de usuário e design de interfaces. Participei do levantamento e escrita de requisitos de projetos, contribuindo para a definição de funcionalidades e escopo das aplicações."
       },
       {
         "company": "Findes",
@@ -35,9 +52,19 @@
         "badges": ["React", "Nest.js", "Docker"],
         "logoUrl": "/findes.png",
         "start": "Ago 2023",
-        "end": "Atual",
-        "title": "Desenvolvedor de Software",
-        "description": "Trabalhando em projetos de desenvolvimento web full-stack, com foco principal no front-end utilizando TypeScript. Responsável por criar interfaces responsivas e modernas alinhadas com as necessidades dos clientes, além de contribuir com o desenvolvimento backend. Principais tecnologias e ferramentas:\n\n**Frontend:**\n- React com TypeScript\n- Next.js e Vite\n- Tanstack Query + Router\n- React Hook Form + Zod\n- Material UI e Styled-Components\n- TailwindCSS\n- Shadcn UI\n- Zustand\n\n**Backend:**\n- Nest.js\n- Prisma ORM\n- Docker\n\n**Metodologias:**\n- Scrum/Agile\n- Versionamento com Git"
+        "end": "Nov 2024",
+        "title": "Estagiário de desenvolvimento de software",
+        "description": "Atuei como Desenvolvedor Fullstack, com React e Nest.js, contribuindo no desenvolvimento de aplicações web modernas e escaláveis. Trabalhei em ambiente Dockerizado, implementando boas práticas de versionamento e organização de código. Colaborei em times multidisciplinares aplicando metodologias ágeis (Scrum)."
+      },
+      {
+        "company": "Foursys",
+        "href": "https://foursys.com.br/",
+        "badges": ["Kotlin", "Java", "Android"],
+        "logoUrl": "/foursys.png",
+        "start": "Abr 2022",
+        "end": "Fev 2023",
+        "title": "Estagiário de desenvolvimento Mobile",
+        "description": "Atuei como Desenvolvedor Android, desenvolvendo e mantendo aplicações mobile com Java e Kotlin. Desenhei e implementei componentes de interface com foco em usabilidade e responsividade. Utilizei controle de versão com Git/GitHub/GitLab para desenvolvimento colaborativo."
       }
     ]
   },
@@ -46,20 +73,28 @@
     "title": "Educação",
     "records": [
       {
+        "institution": "Rocketseat",
+        "href": "https://www.rocketseat.com.br/",
+        "degree": "Pós-Graduação Tech 360",
+        "logoUrl": "/rocketseat.png",
+        "start": "Mai 2025",
+        "end": "Mai 2026"
+      },
+      {
+        "institution": "Rocketseat",
+        "href": "https://www.rocketseat.com.br/",
+        "degree": "Pós-Graduação MBA Fullstack",
+        "logoUrl": "/rocketseat.png",
+        "start": "Ago 2024",
+        "end": "Ago 2025"
+      },
+      {
         "institution": "Multivix",
         "href": "https://multivix.edu.br/",
         "degree": "Análise e Desenvolvimento de Sistemas",
         "logoUrl": "/multivix.png",
         "start": "Jul 2022",
         "end": "Set 2024"
-      },
-      {
-        "institution": "Rocketseat + Sirius",
-        "href": "https://www.rocketseat.com.br/",
-        "degree": "MBA em Desenvolvimento Fullstack",
-        "logoUrl": "/rocketseat.png",
-        "start": "Ago 2024",
-        "end": "Ago 2025"
       }
     ]
   },
