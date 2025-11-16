@@ -7,6 +7,7 @@ import { getMessages } from "next-intl/server";
 import Navbar from "@/components/navbar";
 import SnowFall from "@/components/snow-fall";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { isChristmasModeEnabled } from "@/lib/feature-flags";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/themes-provider";
 import { routing } from "@/services/i18n/routing";
@@ -93,7 +94,7 @@ export default async function RootLayout({
 						<TooltipProvider delayDuration={0}>
 							{children}
 
-							<SnowFall />
+							{isChristmasModeEnabled() && <SnowFall />}
 
 							<Navbar />
 						</TooltipProvider>
