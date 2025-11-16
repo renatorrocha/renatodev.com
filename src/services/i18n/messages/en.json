@@ -95,6 +95,40 @@
       }
     ]
   },
+  "Skills": {
+    "title": "Skills",
+    "description": "Skills and technologies I have worked with.",
+    "categories": {
+      "languages": "Languages & Runtime",
+      "frameworks": "Frameworks & Libraries",
+      "databases": "Databases & Messaging",
+      "cloud": "Cloud & DevOps",
+      "ai": "AI",
+      "tools": "Tools"
+    }
+  },
+  "Certifications": {
+    "title": "Certifications",
+    "description": "Certifications and courses I have completed.",
+    "records": [
+      {
+        "institution": "Rocketseat",
+        "href": "https://www.rocketseat.com.br/",
+        "course": "Ignite React",
+        "logoUrl": "/rocketseat.png",
+        "date": "2024",
+        "technologies": ["React", "TypeScript", "Next.js"]
+      },
+      {
+        "institution": "Rocketseat",
+        "href": "https://www.rocketseat.com.br/",
+        "course": "Ignite Node.js",
+        "logoUrl": "/rocketseat.png",
+        "date": "2024",
+        "technologies": ["Node.js", "TypeScript", "Prisma"]
+      }
+    ]
+  },
   "Project": {
     "title": "My Projects",
     "subtitle": "Check out my",
@@ -210,12 +244,5 @@
         "video": ""
       }
     ]
-  },
-
-  "Blog": {
-    "title": "Blog",
-    "description": "Here are some of my latest articles.",
-    "noPosts": "No posts found",
-    "backToBlog": "Back to blog"
   }
 }
