@@ -11,7 +11,7 @@ export default function EducationSection() {
 		<section id="education">
 			<div className="flex min-h-0 flex-col gap-y-3">
 				<BlurFade delay={BLUR_FADE_DELAY * 7}>
-					<h2 className="text-xl font-bold">{t("title")}</h2>
+					<h2 className="text-center text-xl font-bold">{t("title")}</h2>
 				</BlurFade>
 				{messages.Education.records.map((education, id) => (
 					<BlurFade
