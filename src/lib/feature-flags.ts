@@ -5,7 +5,7 @@ export const FEATURE_FLAGS = {
 	 * - snow fall effect (SnowFall)
 	 * - christmas hat on avatar (fake png xD)
 	 */
-	CHRISTMAS_MODE: true,
+	CHRISTMAS_MODE: false,
 } as const;
 
 export function isChristmasModeEnabled(): boolean {
