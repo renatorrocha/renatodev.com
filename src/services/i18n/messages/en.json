@@ -111,6 +111,9 @@
     "title": "Certifications",
     "description": "Certifications and courses I have completed.",
     "selectPrompt": "Select a certification to view details",
+    "viewCourse": "View Course",
+    "certificateComingSoon": "Certificate image coming soon",
+    "back": "Back",
     "records": [
       {
         "id": "ignite-react",

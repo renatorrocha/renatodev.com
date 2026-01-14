@@ -6,7 +6,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 
 interface ICertificationDetail {
 	id: string;
@@ -18,6 +17,8 @@ interface ICertificationDetail {
 	href?: string;
 	date: string;
 	technologies?: readonly string[];
+	viewCourseLabel?: string;
+	comingSoonLabel?: string;
 }
 
 export function CertificationDetail({
@@ -29,10 +30,12 @@ export function CertificationDetail({
 	href,
 	date,
 	technologies,
+	viewCourseLabel = "View Course",
+	comingSoonLabel = "Certificate image coming soon",
 }: ICertificationDetail) {
 	return (
-		<Card className="flex h-full flex-col">
-			<CardHeader className="space-y-4">
+		<Card className="flex h-full flex-col overflow-hidden">
+			<CardHeader className="shrink-0 space-y-4">
 				<div className="flex items-start justify-between">
 					<div className="flex items-center gap-3">
 						<Avatar className="size-14 border-0 bg-muted-background dark:bg-foreground">
@@ -64,13 +67,13 @@ export function CertificationDetail({
 				)}
 			</CardHeader>
 
-			<CardContent className="flex flex-1 flex-col gap-4">
-				<p className="text-sm leading-relaxed text-muted-foreground">
+			<CardContent className="flex min-h-0 flex-1 flex-col gap-4">
+				<p className="shrink-0 text-sm leading-relaxed text-muted-foreground">
 					{description}
 				</p>
 
-				{certificateImage && (
-					<div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg border bg-muted">
+				{certificateImage ? (
+					<div className="relative min-h-0 flex-1 overflow-hidden rounded-lg border bg-muted">
 						<Image
 							src={certificateImage}
 							alt={`${course} certificate`}
@@ -78,13 +81,17 @@ export function CertificationDetail({
 							className="object-contain"
 						/>
 					</div>
+				) : (
+					<div className="flex min-h-0 flex-1 items-center justify-center rounded-lg border bg-muted/50">
+						<p className="text-sm text-muted-foreground">{comingSoonLabel}</p>
+					</div>
 				)}
 
 				{href && (
-					<Button asChild variant="outline" className="mt-auto w-full">
+					<Button asChild variant="outline" className="shrink-0 w-full">
 						<a href={href} target="_blank" rel="noopener noreferrer">
 							<ExternalLinkIcon className="mr-2 size-4" />
-							View Course
+							{viewCourseLabel}
 						</a>
 					</Button>
 				)}

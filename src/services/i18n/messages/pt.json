@@ -115,6 +115,9 @@
     "title": "Certificações",
     "description": "Certificações e cursos que completei.",
     "selectPrompt": "Selecione uma certificação para ver detalhes",
+    "viewCourse": "Ver Curso",
+    "certificateComingSoon": "Imagem do certificado em breve",
+    "back": "Voltar",
     "records": [
       {
         "id": "ignite-react",
