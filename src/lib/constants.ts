@@ -106,11 +106,11 @@ export const DATA = {
 			icon: HomeIcon,
 			label: "Home",
 		},
-		// {
-		// 	href: "/projects-and-certifications",
-		// 	icon: ArchiveIcon,
-		// 	label: "Projects & Certifications",
-		// },
+		{
+			href: "/certifications",
+			icon: ArchiveIcon,
+			label: "Certifications",
+		},
 	],
 	contact: {
 		email: "renatorrodrigues2002@gmail.com",

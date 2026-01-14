@@ -114,20 +114,27 @@
   "Certifications": {
     "title": "Certificações",
     "description": "Certificações e cursos que completei.",
+    "selectPrompt": "Selecione uma certificação para ver detalhes",
     "records": [
       {
+        "id": "ignite-react",
         "institution": "Rocketseat",
         "href": "https://www.rocketseat.com.br/",
         "course": "Ignite React",
+        "description": "Curso completo de React cobrindo desenvolvimento moderno com TypeScript, Next.js, testes e melhores práticas para construir aplicações React escaláveis.",
         "logoUrl": "/rocketseat.png",
+        "certificateImage": "",
         "date": "2024",
         "technologies": ["React", "TypeScript", "Next.js"]
       },
       {
+        "id": "ignite-nodejs",
         "institution": "Rocketseat",
         "href": "https://www.rocketseat.com.br/",
         "course": "Ignite Node.js",
+        "description": "Curso aprofundado de Node.js cobrindo APIs REST, autenticação, integração com banco de dados usando Prisma, princípios SOLID e melhores práticas de desenvolvimento backend.",
         "logoUrl": "/rocketseat.png",
+        "certificateImage": "",
         "date": "2024",
         "technologies": ["Node.js", "TypeScript", "Prisma"]
       }
