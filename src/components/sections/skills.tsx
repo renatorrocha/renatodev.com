@@ -1,7 +1,13 @@
 "use client";
 
 import { CodeIcon } from "@radix-ui/react-icons";
-import { CloudIcon, LayoutDashboard, WrenchIcon } from "lucide-react";
+import {
+	BrainCog,
+	Cloudy,
+	DatabaseZap,
+	LayoutDashboard,
+	WrenchIcon,
+} from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
@@ -12,14 +18,22 @@ import BlurFade from "../blur-fade";
 function SkillIcon(idx: number): React.ReactNode {
 	switch (idx) {
 		case 0:
+			// Languages & Runtime
 			return <CodeIcon className="size-5" />;
 		case 1:
+			// Frameworks & Libraries
 			return <LayoutDashboard className="size-5" />;
 		case 2:
-			return <CloudIcon className="size-5" />;
+			// Databases & Messaging
+			return <DatabaseZap className="size-5" />;
 		case 3:
-			return <WrenchIcon className="size-5" />;
+			// Cloud & DevOps
+			return <Cloudy className="size-5" />;
+		case 4:
+			// AI
+			return <BrainCog className="size-5" />;
 		default:
+			// Tools
 			return <WrenchIcon className="size-5" />;
 	}
 }

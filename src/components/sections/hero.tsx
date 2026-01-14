@@ -4,6 +4,7 @@ import BlurFade from "@/components/blur-fade";
 import BlurFadeText from "@/components/blur-fade-text";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { BLUR_FADE_DELAY, DATA } from "@/lib/constants";
+import { isChristmasModeEnabled } from "@/lib/feature-flags";
 
 export default function HeroSection() {
 	const t = useTranslations("Hero");
@@ -34,11 +35,13 @@ export default function HeroSection() {
 								<AvatarFallback>{DATA.initials}</AvatarFallback>
 							</Avatar>
 
-							<img
-								src="/christmas-hat.png"
-								alt="Snow Fall"
-								className="absolute -right-8 -top-6 rotate-12 size-24"
-							/>
+							{isChristmasModeEnabled() && (
+								<img
+									src="/christmas-hat.png"
+									alt="Christmas Hat"
+									className="absolute -right-8 -top-6 rotate-12 size-24"
+								/>
+							)}
 						</div>
 					</BlurFade>
 				</div>
